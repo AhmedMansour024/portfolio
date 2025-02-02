@@ -1,463 +1,487 @@
 <!DOCTYPE html>
-
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        <link rel="stylesheet" href="assets/css/main.css" />
-        <title>Ahmed Mansour Portfolio </title>
-    </head>
-    <body class="is-preload">
 
-        <!-- Header -->
-            <header id="header" style="text-align: center">
-                <div class="inner">
-                    <a href="#" class="image avatar" ><img src="images/pn.png" alt="" /></a>
-                    <h1 class="align-center"><strong>I Am Ahmed</strong></h1>
-                    <h1 class="align-center">A Passionate Developer <br />
-                        with a Desire for Creating Impactful Software and Learning New Technologies.<br /></h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <link rel="icon" href="./images/mainlogo.png">
+  <!-- <link href="./style.css" rel="stylesheet"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <title>Yanni A-M</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Style for the image overlay (lightbox) */
+    .project-wrap {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.8);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+
+    .project-wrap img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 10px;
+    }
+
+    /* Card Image */
+    .card-img-top {
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <svg class="svg-curve" viewBox="0 0 1440 79" xmlns="http://www.w3.org/2000/svg">
+    <path d="M-100 0C-100 0 218.416 55.835 693.5 55.835C1168.58 55.835 1487 0 1487 0V79H-100V0Z"></path>
+  </svg>
+  <header class="p-3 bg-black text-white">
+    <nav class="navbar pb-5" style="background-color: #000000;">
+      <div class="container-fluid image-container">
+        <a class="navbar-brand text-white" href="#">
+          <img src="./images/mainlogo.png" alt="Logo" width="24" height="24" class="d-inline-block align-text-top">
+          <span class="px-2">Yanni A-M</span>
+        </a>
+      </div>
+    </nav>
+    <div class="row">
+      <div class="col-md-8 p-3 order-md-1 order-2">
+        <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-8">
+            <h1 class="text-center">Hello!</h1>
+            <p class="text-start">
+              My name is Ahmed Mansour, Also Known as Yanni and I’m a Civil Engineer with a deep passion for Computer Science. Based in Cairo, Egypt. <br>
+              I’ve worked on a variety of civil engineering projects, focusing on the design and implementation of infrastructure solutions. 
+              My fascination with technology led me to study computer science, where I explored how software, algorithms, 
+              and data analysis can revolutionize engineering practices. <br>
+              I am particularly interested in leveraging computational tools, machine learning, 
+              and automation to enhance the efficiency, accuracy, and sustainability of engineering designs and construction processes. <br>
+              Combining these two fields allows me to approach problem-solving from a unique, multidisciplinary perspective, 
+              driving innovation within the civil engineering industry.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 order-md-2 order-1">
+        <picture>
+          <img class="img-fluid" src="./image4.webp" alt="header image">
+        </picture>
+      </div>
+    </div>
+  </header>
+
+  <svg class="svg-curve" viewBox="0 0 1440 79" xmlns="http://www.w3.org/2000/svg">
+    <path d="M-100 79C-100 79 218.416 23.165 693.5 23.165C1168.58 23.165 1487 79 1487 79V0H-100V79Z"></path>
+  </svg>
+
+  <main>
+    <div class="text-center">
+      <h1>My Work</h1>
+      <p>A collection of projects I've worked on and previous experience</p>
+    </div>
+    <section class="row justify-content-center">
+      <!-- Computer Science -->
+      <section class="col-sm-8 mb-5 mt-2">
+        <div class="row-cols-1 text-start m-3 fs-3 fw-medium">Computer Science Projects</div>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          
+          <!-- First Image Card -->
+          <div class="col">
+            <div class="card h-100 p-3 shadow-lg p-3 my-301 bg-body-tertiary rounded">
+              <img src="https://github.com/AhmedMansour024/MAL-API-Project/blob/main/images/2.JPG?raw=true"
+                class="card-img-top" alt="Card image" id="image1">
+              <div class="card-body">
+                <h5 class="card-title text-center">MAL API Project</h5>
+                <p class="card-text text-start">
+                  A Web application made by flask and it uses MyAnimeList API to Fetch Anime
+                  Details.
+                  The Idea of The Project was to have Multi Search like using a (.txt) file or using a Multiline Text
+                  area for searching multiple Anime name at Once.
+                  Also you can have access to some of its Feature by using Guest Page Or Logging.
+                  Using an Account Give you many Features like saving and Removing Animes and Displaying the saved
+                  animes.
+                  Also This is My Final Project For CS50X.
+                </p>
+                <ul class="text-start nav">
+                  <li class="nav-item px-3 text-center"><strong>Links: </strong></li>
+                  <li class="nav-item">
+                    <a href="https://github.com/AhmedMansour024/MAL-API-Project" class="text-decoration-none"
+                      target="_blank" style="color: #000000;"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                        height="24" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                        <path
+                          d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8">
+                        </path>
+                      </svg></a>
+                  </li>
+                  <li class="nav-item px-3">
+                    <a href="https://youtu.be/MH-EPgqFNe4" class="text-decoration-none" target="_blank"
+                      style="color: red;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                        <path
+                          d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+                      </svg></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- The image lightbox overlay -->
+            <div class="project-wrap" id="projectWrap1">
+              <img src="" id="overlayImage1" alt="Expanded Image">
+            </div>
+          </div>
+
+          <!-- Second Image Card -->
+          <div class="col">
+            <div class="card h-100 p-3 shadow-lg p-3 my-301 bg-body-tertiary rounded">
+              <img
+                src="https://github.com/AhmedMansour024/Youtube-Downloader-With-GUI/blob/main/images/1-1.JPG?raw=true"
+                class="card-img-top" alt="Card image" id="image2">
+              <div class="card-body">
+                <h5 class="card-title text-center">Youtube Downloader With GUI</h5>
+                <p class="card-text text-start">
+                  GUI Program Made with Python, use yt_dlp , tkinter and ttkbootstrap libraries. It Can be used to download single Video or a full playlist or shots. 
+                  Also you can choose the download Location and the Quality of the video.
+                </p>
+                <ul class="text-start nav">
+                  <li class="nav-item px-3 text-center"><strong>Links: </strong></li>
+                  <li class="nav-item">
+                    <a href="https://github.com/AhmedMansour024/Youtube-Downloader-With-GUI" class="text-decoration-none"
+                      target="_blank" style="color: #000000;"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                        height="24" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                        <path
+                          d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8">
+                        </path>
+                      </svg></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- The image lightbox overlay -->
+            <div class="project-wrap" id="projectWrap2">
+              <img src="" id="overlayImage2" alt="Expanded Image">
+            </div>
+          </div>
+          
+          <!-- Third Image Card -->
+          <div class="col">
+            <div class="card h-100 p-3 shadow-lg p-3 my-301 bg-body-tertiary rounded">
+              <img src="https://github.com/AhmedMansour024/CS50-Python-Final-Project/raw/main/images/2.JPG"
+                class="card-img-top" alt="Card image" id="image3">
+              <div class="card-body">
+                <h5 class="card-title text-center">Anime Details Scraper</h5>
+                <p class="card-text text-start">
+                  Its a Python program uses MyAnimeList API to Fetch Data From A Text file That contain 1 Anime in a
+                  line and save it into a Database file.<br>
+                  In addition, it creates a (.csv) file containing all the data saved in the Database file based on the
+                  filter given. Also This is My Final Project For CS50P.
+                </p>
+                <ul class="text-start nav">
+                  <li class="nav-item px-3 text-center"><strong>Links: </strong></li>
+                  <li class="nav-item">
+                    <a href="https://github.com/AhmedMansour024/CS50-Python-Final-Project" class="text-decoration-none"
+                      target="_blank" style="color: #000000;"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                        height="24" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                        <path
+                          d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8">
+                        </path>
+                      </svg></a>
+                  </li>
+                  <li class="nav-item px-3">
+                    <a href="https://www.youtube.com/watch?v=tJAo1f6BAxI" class="text-decoration-none" target="_blank"
+                      style="color: red;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                        <path
+                          d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+                      </svg></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- The image lightbox overlay -->
+            <div class="project-wrap" id="projectWrap3">
+              <img src="" id="overlayImage3" alt="Expanded Image">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr>
+
+      <!-- Projects Section -->
+      <section class="col-sm-8 mb-5 mt-2">
+        <div class="row-cols-1 text-start m-3 fs-3 fw-medium">Work Experience in Civil Engineering</div>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+
+          <!-- First Image Card -->
+          <div class="col">
+            <div class="card h-100 p-3 shadow-lg p-3 my-301 bg-body-tertiary rounded">
+              <img src="./images/sodic_east_el_shorouk_project.png"
+                class="card-img-top" alt="Card image" id="image4">
+              <div class="card-body">
+                <h5 class="card-title">Sodic East Project, Al Shorouk City</h5>
+                <div class="card-text">
+                  <p><strong>Company Name:</strong> Farag Sultan Contracting and Transportation Establishment</p>
+                  <p><strong>Role:</strong> Lead Site Engineer</p>
+                  <p><strong>Description:</strong> 
+                    As a Site Engineer, I am responsible for ensuring the successful execution of construction projects by managing daily site operations, ensuring compliance with technical drawings, and coordinating with various stakeholders. 
+                    My role involves preparing and reviewing shop drawings, monitoring soil cutting and leveling, ensuring the work is performed to the correct elevations and levels as per design specifications, and maintaining accurate documentation for all project activities. 
+                    I work closely with the project team, contractors, and consultants to ensure all construction tasks are completed on time, within budget, and to the required quality standards.
+                  </p>
+                  <p><strong>Key Responsibilities:</strong> <br>
+                    <strong class="fw-medium">•	Preparing Shop Drawings:</strong> Creating and reviewing detailed shop drawings based on architectural and structural designs to guide construction activities. <br>
+                    <strong class="fw-medium">•	Monitoring Site Levels:</strong> Supervising and verifying soil cutting and leveling work to ensure that the site’s elevation matches the design specifications, using surveying equipment and referencing official project plans. <br>
+                    <strong class="fw-medium">•	Liaising with Consultants: </strong> Collaborating with the consulting engineer to ensure that the executed works align with project standards, making sure any discrepancies are addressed promptly. <br>
+                    <strong class="fw-medium">•	Progress Documentation and Reporting: </strong> Preparing and submitting detailed progress reports, including monthly statements for completed work (progress claims) for client billing purposes. <br>
+                    <strong class="fw-medium">•	Managing Interlock Works: </strong> Overseeing and coordinating interlock-related activities and ensuring that these components meet project specifications. <br>
+                    <strong class="fw-medium">•	Monitoring and Managing Labor and Resources: </strong> Ensuring the availability of necessary resources (tools, materials, and manpower) to complete tasks on time. This includes coordinating with the labor force and ensuring that all team members are aligned with the project's needs. <br>
+                    <strong class="fw-medium">•	Client and Consultant Coordination: </strong> Serving as the key point of contact for the project’s client and consultant, ensuring all project queries and issues are communicated and resolved efficiently. <br>
+                    <strong class="fw-medium">•	Ensuring Compliance:</strong> Continuously monitoring site work to ensure all activities comply with project timelines, quality standards, and safety regulations. <br>
+                    <strong class="fw-medium">•	Managing Documentation: </strong> Handling all administrative tasks related to the project, including site reports, work orders, and necessary approvals, and ensuring that documentation is up to date and available for inspection by the client or regulatory bodies. <br>
+                  </p>
+                  <p><strong>Achievements:</strong> <br>
+                    •	Successfully completed the substitution layers and concrete slab installation for the roundabout, ensuring proper foundation and structural integrity in line with project specifications.<br>
+                    •	Led the construction and installation of the interlock pavement for the roundabout and an entire parcel of the project, enhancing the aesthetics and functionality of the area while adhering to quality standards.<br>
+                    •	Oversaw and executed the construction of the asphalt road for a major roadway, ensuring smooth and durable road surfaces while meeting all project deadlines.<br>
+                    •	Managed the installation of interlock paving for an entire parcel, ensuring seamless execution and high-quality finish, which contributed to the overall project’s timely completion.<br>
+                    •	Spearheaded the repair and replacement of damaged interlock in a designated parcel, improving the area's safety and visual appeal while minimizing disruption to ongoing construction activities.<br>
+                    •	Coordinated and completed the substitution layers for multiple roads across the project, ensuring consistency and precision in the foundation layers, which directly contributed to the durability and performance of the final road surfaces.<br>
+                  </p>
                 </div>
-            </header>
+              </div>
+            </div>
 
-        <!-- Main -->
-            <div id="main">
+            <!-- The image lightbox overlay -->
+            <div class="project-wrap" id="projectWrap4">
+              <img src="" id="overlayImage4" alt="Expanded Image">
+            </div>
+          </div>
 
-                <!-- One -->
-                    <section id="one">
-                        <header class="major">
-                            <h2>About Me</h2>
-                        </header>
-                        <p>Hi! I’m Ahmed Mansour, a software developer skilled in Python, Flask, SQL, HTML, and more. I’m passionate about solving real-world problems through technology.</p>
-                        <div class="alt" style="padding-bottom: 40px;">
-                            When I’m not coding, you’ll find me exploring:
-                            <li>Hobbies: Reading tech blogs, gaming, hiking, and experimenting with creative recipes.</li>
-                            <li>Interests: AI, mobile app development, and building innovative web applications.</li>
-                        </div>
-                        <ul class="actions">
-                            <li><a href="https://linkedin.com/in/ahmed-mansour-900624171" class="button">Learn More</a></li>
-                        </ul>
-                    </section>
+          <!-- second Image Card -->
+          <div class="col">
+            <div class="card h-100 p-3 shadow-lg p-3 my-301 bg-body-tertiary rounded">
+              <img src="./images/New_Obour_Social_Housing_Project.jpg"
+                class="card-img-top" alt="Card image" id="image5">
+              <div class="card-body">
+                <h5 class="card-title">New Obour Social Housing Project</h5>
+                <div class="card-text">
+                  <p><strong>Company Name:</strong> Housing And Building National Research Center</p>
+                  <p><strong>Role:</strong> Consulting Engineer</p>
+                  <p><strong>Description:</strong> 
+                    As a Consultant Engineer responsible for overseeing carpentry, metalwork, and concrete pouring activities, you will play a crucial role in ensuring that all construction tasks meet the required quality, safety, and design standards. Your primary responsibility will be to monitor and guide the subcontractors and contractors in executing the works in accordance with the approved plans and specifications.
+                  </p>
+                  <p><strong>Key Responsibilities:</strong> <br>
+                    <strong class="fw-medium">•	Supervision of Carpentry and Metalwork:</strong> Oversee and monitor all carpentry and metalwork activities on-site, ensuring that the works are executed according to approved plans, specifications, and standards. This includes checking the quality of materials, workmanship, and compliance with safety regulations. <br>
+                    <strong class="fw-medium">•	Concrete Pouring Oversight:</strong> Supervise the process of concrete pouring, ensuring that it meets project requirements, including mix ratios, timing, and curing methods. Verify that the work is carried out in compliance with structural design specifications and industry best practices. <br>
+                    <strong class="fw-medium">•	Coordination with Contractors:</strong> Regularly communicate and collaborate with subcontractors and contractors handling carpentry, metalwork, and concrete works to ensure the timely and efficient completion of tasks. Address any issues or concerns that may arise during the construction process. <br>
+                    <strong class="fw-medium">•	Quality Control and Inspections: </strong> Conduct frequent inspections of carpentry, metalwork, and concrete pouring activities, ensuring adherence to quality standards. Document findings and prepare reports on the progress, issues, and recommendations for corrective actions. <br>
+                    <strong class="fw-medium">•	Compliance and Documentation: </strong> Ensure all works comply with local building codes, regulations, and client requirements. Maintain accurate records of inspections, approvals, and any changes made to the original plans or designs. <br>
+                    <strong class="fw-medium">•	Troubleshooting and Problem-Solving: </strong> Identify and resolve any technical issues or discrepancies related to the carpentry, metalwork, or concrete works. Provide technical support and recommendations to contractors and other stakeholders. <br>
+                    <strong class="fw-medium">•	Safety Management: </strong> Ensure that all carpentry, metalwork, and concrete activities are carried out with a high standard of safety, and enforce compliance with health and safety regulations on-site. <br>
+                    <strong class="fw-medium">•	Project Timeline Monitoring: </strong> Track the progress of the works to ensure that the activities are completed on schedule. Provide regular updates to the project management team regarding any delays or obstacles that may affect the project timeline. <br>
+                    <strong class="fw-medium">•	Collaboration with Design Teams:  </strong> Work closely with the design and architectural teams to address any issues or clarifications regarding the execution of carpentry, metalwork, and concrete-related elements in the project. <br>
+                  </p>
+                  <p><strong>Achievements:</strong> <br>
+                    •	Successfully Supervised Multiple Residential Areas: Led the supervision of carpentry, metalwork, and concrete works across many residential zones, ensuring all construction tasks met quality standards, regulatory requirements, and project timelines.<br>
+                    •	Streamlined Project Execution Across Multiple Areas: Managed and coordinated the supervision of construction activities across several residential zones, resulting in the timely and efficient completion of key tasks without compromising on quality or safety.<br>
+                    •	Ensured High-Quality Standards for Large-Scale Developments: Conducted rigorous inspections and quality control across multiple residential zones, maintaining consistent quality standards and resolving challenges across diverse project sites.<br>
+                    •	Minimized Delays and Improved Project Timelines: Effectively supervised the work across multiple residential areas, ensuring alignment with the overall project timeline and minimizing delays, contributing to the on-time delivery of the development.<br>
+                    •	Optimized Coordination Across Multiple Contractors: Enhanced communication and collaboration among contractors working across different areas, ensuring smooth project flow and effective troubleshooting of issues that arose during construction.<br>
 
-				<!-- Two -->
-					<section id="two">
-						<h2>Recent Work</h2>
-						<div class="row">
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/01.jpg" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>
-								<h3>CS50 Python Final Project</h3>
-								<p>paragraph Here.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" /></a>
-								<h3>Youtube Downloader With GUI</h3>
-								<p>paragraph Here.</p>
-							</article>
-							<!-- <article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/03.jpg" class="image fit thumb"><img src="images/thumbs/03.jpg" alt="" /></a>
-								<h3>Tortor metus commodo</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/04.jpg" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>
-								<h3>Quam neque phasellus</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/05.jpg" class="image fit thumb"><img src="images/thumbs/05.jpg" alt="" /></a>
-								<h3>Nunc enim commodo aliquet</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/06.jpg" class="image fit thumb"><img src="images/thumbs/06.jpg" alt="" /></a>
-								<h3>Risus ornare lacinia</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-							</article> -->
-						</div>
-						<ul class="actions">
-							<li><a href="#" class="button">Full Portfolio</a></li>
-						</ul>
-					</section>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- The image lightbox overlay -->
+            <div class="project-wrap" id="projectWrap5">
+              <img src="" id="overlayImage5" alt="Expanded Image">
+            </div>
+          </div>
 
-				<!-- Three -->
-					<!-- <section id="three">
-						<h2>Get In Touch</h2>
-						<p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>
-						<div class="row">
-							<div class="col-8 col-12-small">
-								<form method="post" action="#">
-									<div class="row gtr-uniform gtr-50">
-										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
-										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
-										<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
-									</div>
-								</form>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</div>
-							<div class="col-4 col-12-small">
-								<ul class="labeled-icons">
-									<li>
-										<h3 class="icon solid fa-home"><span class="label">Address</span></h3>
-										1234 Somewhere Rd.<br />
-										Nashville, TN 00000<br />
-										United States
-									</li>
-									<li>
-										<h3 class="icon solid fa-mobile-alt"><span class="label">Phone</span></h3>
-										000-000-0000
-									</li>
-									<li>
-										<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
-										<a href="#">hello@untitled.tld</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</section> -->
+          <!-- third Image Card -->
+          <div class="col">
+            <div class="card h-100 p-3 shadow-lg p-3 my-301 bg-body-tertiary rounded">
+              <img src="./images/R2.jpg"
+                class="card-img-top" alt="Card image" id="image6">
+              <div class="card-body">
+                <h5 class="card-title">District R2 New Administrative Capital</h5>
+                <div class="card-text">
+                  <p><strong>Company Name:</strong> El-Masrawyah Building & Construction</p>
+                  <p><strong>Role:</strong> Executive Engineer</p>
+                  <p><strong>Description:</strong> 
+                    Site Engineer for 12 Residential Building Construction Project, overseeing all technical aspects from foundation to completion. My responsibilities included coordinating with architects, contractors, and stakeholders, ensuring that construction adhered to approved designs, and performing regular quality and safety inspections. I also managed resources, tracked project progress, and resolved engineering challenges to ensure timely, cost-effective, and high-quality project delivery while maintaining compliance with safety and environmental standards.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- The image lightbox overlay -->
+            <div class="project-wrap" id="projectWrap6">
+              <img src="" id="overlayImage6" alt="Expanded Image">
+            </div>
+          </div>
 
-				<!-- Four -->
-				<!--
-					<section id="four">
-						<h2>Elements</h2>
+          <!-- forth Image Card -->
+          <div class="col">
+            <div class="card h-100 p-3 shadow-lg p-3 my-301 bg-body-tertiary rounded">
+              <img src="./images/R1.jpg"
+                class="card-img-top" alt="Card image" id="image7">
+              <div class="card-body">
+                <h5 class="card-title">District R2 & R1 New Administrative Capital</h5>
+                <div class="card-text">
+                  <p><strong>Company Name:</strong> Al-Maraj Building & Construction</p>
+                  <p><strong>Role:</strong> Executive Engineer</p>
+                  <p><strong>Description:</strong> 
+                    Site Engineer for 20 Residential Building Construction Project, overseeing all technical aspects from foundation to completion. My responsibilities included coordinating with architects, contractors, and stakeholders, ensuring that construction adhered to approved designs, and performing regular quality and safety inspections. I also managed resources, tracked project progress, and resolved engineering challenges to ensure timely, cost-effective, and high-quality project delivery while maintaining compliance with safety and environmental standards.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- The image lightbox overlay -->
+            <div class="project-wrap" id="projectWrap7">
+              <img src="" id="overlayImage7" alt="Expanded Image">
+            </div>
+          </div>
+          
+        </div>
+      </section>
 
-						<section>
-							<h4>Text</h4>
-							<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-							This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-							This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-							<hr />
-							<header>
-								<h4>Heading with a Subtitle</h4>
-								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-							</header>
-							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-							<header>
-								<h5>Heading with a Subtitle</h5>
-								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-							</header>
-							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-							<hr />
-							<h2>Heading Level 2</h2>
-							<h3>Heading Level 3</h3>
-							<h4>Heading Level 4</h4>
-							<h5>Heading Level 5</h5>
-							<h6>Heading Level 6</h6>
-							<hr />
-							<h5>Blockquote</h5>
-							<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-							<h5>Preformatted</h5>
-							<pre><code>i = 0;
+      <hr>
 
-while (!deck.isInOrder()) {
-print 'Iteration ' + i;
-deck.shuffle();
-i++;
-}
+      <!-- Projects Section -->
+      <section class="col-sm-8 mb-5 mt-2">
+        <div class="text-start m-3">
+          <h3>Skills and Competencies</h3>
+          <p>
+            •	Strong knowledge of construction methods and materials.<br>
+            •	Proficient in the use of surveying equipment and software to measure and document site levels.<br>
+            •	Excellent communication skills, with the ability to interact with clients, consultants, and contractors.<br>
+            •	Ability to prepare detailed progress reports, material requests, and work orders.<br>
+            •	Knowledge of safety standards and regulations within the construction industry.<br>
+            •	Strong problem-solving skills, with the ability to address challenges on-site quickly and efficiently.<br>
+            </p>
+        </div>
+          <div class="text-start m-3">
+            <h3>Technical Skills</h3>
+            <p>
+              <strong>Design & Drafting Software:</strong> AutoCAD, Civil 3D, Revit And other Surveying Programs <br>
+              <strong>Office Software:</strong> Microsoft Word, Microsoft Excel, PowerPoint<br>
+              <strong>Programming Languages:</strong> Python, C, JavaScript, Java<br>
+            </p>
+          </div>
+        </section>
 
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-						</section>
+    </section>
+  </main>
 
-						<section>
-							<h4>Lists</h4>
-							<div class="row">
-								<div class="col-6 col-12-xsmall">
-									<h5>Unordered</h5>
-									<ul>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Sagittis adipiscing lorem eleifend.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ul>
-									<h5>Alternate</h5>
-									<ul class="alt">
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Sagittis adipiscing lorem eleifend.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-xsmall">
-									<h5>Ordered</h5>
-									<ol>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Etiam vel felis at lorem sed viverra.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Etiam vel felis at lorem sed viverra.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ol>
-									<h5>Icons</h5>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-										<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-										<li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
-									</ul>
-								</div>
-							</div>
-							<h5>Actions</h5>
-							<ul class="actions">
-								<li><a href="#" class="button primary">Default</a></li>
-								<li><a href="#" class="button">Default</a></li>
-							</ul>
-							<ul class="actions small">
-								<li><a href="#" class="button primary small">Small</a></li>
-								<li><a href="#" class="button small">Small</a></li>
-							</ul>
-							<div class="row">
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary small">Small</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary fit">Default</a></li>
-										<li><a href="#" class="button fit">Default</a></li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary small fit">Small</a></li>
-										<li><a href="#" class="button small fit">Small</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
+  <svg class="svg-curve" viewBox="0 0 1440 79" xmlns="http://www.w3.org/2000/svg">
+    <path d="M-100 0C-100 0 218.416 55.835 693.5 55.835C1168.58 55.835 1487 0 1487 0V79H-100V0Z"></path>
+  </svg>
 
-						<section>
-							<h4>Table</h4>
-							<h5>Default</h5>
-							<div class="table-wrapper">
-								<table>
-									<thead>
-										<tr>
-											<th>Name</th>
-											<th>Description</th>
-											<th>Price</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Item One</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Two</td>
-											<td>Vis ac commodo adipiscing arcu aliquet.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Three</td>
-											<td> Morbi faucibus arcu accumsan lorem.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Four</td>
-											<td>Vitae integer tempus condimentum.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Five</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-									</tbody>
-									<tfoot>
-										<tr>
-											<td colspan="2"></td>
-											<td>100.00</td>
-										</tr>
-									</tfoot>
-								</table>
-							</div>
+  <footer class="p-3 bg-black text-white">
+    <div class="row">
+      <ul class="col nav">
+        <li class="nav-item ms-2">
+          <p class="nav-link text-white"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+              fill="currentColor" class="bi bi-c-circle" viewBox="0 0 16 16">
+              <path
+                d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.146 4.992c-1.212 0-1.927.92-1.927 2.502v1.06c0 1.571.703 2.462 1.927 2.462.979 0 1.641-.586 1.729-1.418h1.295v.093c-.1 1.448-1.354 2.467-3.03 2.467-2.091 0-3.269-1.336-3.269-3.603V7.482c0-2.261 1.201-3.638 3.27-3.638 1.681 0 2.935 1.054 3.029 2.572v.088H9.875c-.088-.879-.768-1.512-1.729-1.512" />
+            </svg> No Rights Reserved</p>
+        </li>
+      </ul>
+      <ul class="col nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="https://github.com/AhmedMansour024" target="_blank"><svg
+              xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-github"
+              viewBox="0 0 16 16">
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+            </svg></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="https://linkedin.com/in/ahmed-mansour-900624171" target="_blank"><svg
+              xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-linkedin"
+              viewBox="0 0 16 16">
+              <path
+                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+            </svg></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="https://www.youtube.com/@AhmedMansour024" target="_blank"><svg
+              xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-youtube"
+              viewBox="0 0 16 16">
+              <path
+                d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+            </svg></a>
+        </li>
+        <li class="nav-item nav-link text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-discord"
+            viewBox="0 0 16 16">
+            <path
+              d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612" />
+          </svg> yanni9301
+        </li>
+      </ul>
+      <div class="col-sm">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <!-- Link to download/view the resume -->
+            <a class="nav-link text-white" href="./images/resume.pdf" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                class="bi bi-file-person" viewBox="0 0 16 16">
+                <path
+                  d="M12 1a1 1 0 0 1 1 1v10.755S12 11 8 11s-5 1.755-5 1.755V2a1 1 0 0 1 1-1zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                <path d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+              </svg>
+              Resume
+            </a>
+          </li>
+        </ul>
+      </div>
+  </footer>
 
-							<h5>Alternate</h5>
-							<div class="table-wrapper">
-								<table class="alt">
-									<thead>
-										<tr>
-											<th>Name</th>
-											<th>Description</th>
-											<th>Price</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Item One</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Two</td>
-											<td>Vis ac commodo adipiscing arcu aliquet.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Three</td>
-											<td> Morbi faucibus arcu accumsan lorem.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Four</td>
-											<td>Vitae integer tempus condimentum.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Five</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-									</tbody>
-									<tfoot>
-										<tr>
-											<td colspan="2"></td>
-											<td>100.00</td>
-										</tr>
-									</tfoot>
-								</table>
-							</div>
-						</section>
+  <svg class="svg-curve" viewBox="0 0 1440 79" xmlns="http://www.w3.org/2000/svg">
+    <path d="M-100 79C-100 79 218.416 23.165 693.5 23.165C1168.58 23.165 1487 79 1487 79V0H-100V79Z"></path>
+  </svg>
 
-						<section>
-							<h4>Buttons</h4>
-							<ul class="actions">
-								<li><a href="#" class="button primary">Primary</a></li>
-								<li><a href="#" class="button">Default</a></li>
-							</ul>
-							<ul class="actions">
-								<li><a href="#" class="button large">Large</a></li>
-								<li><a href="#" class="button">Default</a></li>
-								<li><a href="#" class="button small">Small</a></li>
-							</ul>
-							<ul class="actions fit">
-								<li><a href="#" class="button primary fit">Fit</a></li>
-								<li><a href="#" class="button fit">Fit</a></li>
-							</ul>
-							<ul class="actions fit small">
-								<li><a href="#" class="button primary fit small">Fit + Small</a></li>
-								<li><a href="#" class="button fit small">Fit + Small</a></li>
-							</ul>
-							<ul class="actions">
-								<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-								<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-							</ul>
-							<ul class="actions">
-								<li><span class="button primary disabled">Primary</span></li>
-								<li><span class="button disabled">Default</span></li>
-							</ul>
-						</section>
+  <script>
+    // Function to open the lightbox
+    function openLightbox(imageId, overlayId, overlayImageId) {
+      const img = document.getElementById(imageId);
+      const overlay = document.getElementById(overlayId);
+      const overlayImage = document.getElementById(overlayImageId);
 
-						<section>
-							<h4>Form</h4>
-							<form method="post" action="#">
-								<div class="row gtr-uniform gtr-50">
-									<div class="col-6 col-12-xsmall">
-										<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
-									</div>
-									<div class="col-6 col-12-xsmall">
-										<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
-									</div>
-									<div class="col-12">
-										<select name="demo-category" id="demo-category">
-											<option value="">- Category -</option>
-											<option value="1">Manufacturing</option>
-											<option value="1">Shipping</option>
-											<option value="1">Administration</option>
-											<option value="1">Human Resources</option>
-										</select>
-									</div>
-									<div class="col-4 col-12-small">
-										<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-										<label for="demo-priority-low">Low Priority</label>
-									</div>
-									<div class="col-4 col-12-small">
-										<input type="radio" id="demo-priority-normal" name="demo-priority">
-										<label for="demo-priority-normal">Normal Priority</label>
-									</div>
-									<div class="col-4 col-12-small">
-										<input type="radio" id="demo-priority-high" name="demo-priority">
-										<label for="demo-priority-high">High Priority</label>
-									</div>
-									<div class="col-6 col-12-small">
-										<input type="checkbox" id="demo-copy" name="demo-copy">
-										<label for="demo-copy">Email me a copy of this message</label>
-									</div>
-									<div class="col-6 col-12-small">
-										<input type="checkbox" id="demo-human" name="demo-human" checked>
-										<label for="demo-human">I am a human and not a robot</label>
-									</div>
-									<div class="col-12">
-										<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-									</div>
-									<div class="col-12">
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</div>
-								</div>
-							</form>
-						</section>
+      img.onclick = function () {
+        overlay.style.display = "flex";  // Show the overlay
+        overlayImage.src = img.src;     // Set the overlay image to the clicked image's source
+      };
 
-						<section>
-							<h4>Image</h4>
-							<h5>Fit</h5>
-							<div class="box alt">
-								<div class="row gtr-50 gtr-uniform">
-									<div class="col-12"><span class="image fit"><img src="images/fulls/05.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/04.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/05.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/06.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
-								</div>
-							</div>
-							<h5>Left &amp; Right</h5>
-							<p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-							<p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-						</section>
+      // Close the overlay when clicking outside the image
+      overlay.onclick = function (event) {
+        if (event.target === overlay) {
+          overlay.style.display = "none";  // Hide the overlay
+        }
+      };
+    }
 
-					</section>
-				-->
+    // Initialize lightbox for all images
+    openLightbox("image1", "projectWrap1", "overlayImage1");
+    openLightbox("image2", "projectWrap2", "overlayImage2");
+    openLightbox("image3", "projectWrap3", "overlayImage3");
+    openLightbox("image4", "projectWrap4", "overlayImage4");
+    openLightbox("image5", "projectWrap5", "overlayImage5");
+    openLightbox("image6", "projectWrap6", "overlayImage6");
+    openLightbox("image7", "projectWrap7", "overlayImage7");
+  </script>
+</body>
 
-			</div>
-
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-					<ul class="icons">
-						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-						<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-					</ul>
-					<ul class="copyright">
-						<li>&copy; All rights reserved</li>
-					</ul>
-				</div>
-			</footer>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
 </html>
